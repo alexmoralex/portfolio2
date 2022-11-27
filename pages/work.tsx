@@ -1,10 +1,10 @@
 import Head from 'next/head'
 
-export default function Home() {
+export default function Contact() {
   return (
     <>
       <Head>
-        <title>AlexMo - Home</title>
+        <title>AlexMo - Work</title>
       </Head>
     </>
   )
