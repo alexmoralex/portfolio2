@@ -1,5 +1,9 @@
-export default function Layout() {
+import React from "react"
+
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div></div>
+    <div>
+      {children}
+    </div>
   )
 }
