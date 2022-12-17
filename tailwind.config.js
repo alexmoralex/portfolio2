@@ -9,6 +9,10 @@ module.exports = {
       fontFamily: {
         sans: ['Barlow', 'sans-serif'],
       },
+      colors: {
+        'black-coffee': '#3B302B',
+        'pine-tree': '#2F2825',
+      },
       // screens: {
       //   '2xl': {'max': '1535px'},
       //   // => @media (max-width: 1535px) { ... }

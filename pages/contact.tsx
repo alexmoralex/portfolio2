@@ -1,11 +1,9 @@
-import Head from 'next/head'
+import Layout from '../components/layout/Layout';
 
 export default function Contact() {
   return (
-    <>
-      <Head>
-        <title>AlexMo - Contact</title>
-      </Head>
-    </>
+    <Layout page="Contact">
+      <h2>test</h2>
+    </Layout>
   )
 }
