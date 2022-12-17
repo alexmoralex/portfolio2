@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
+:root {
+  --header-height: 60px;
+}
+
 body {
   @apply bg-black-coffee text-white;
 }
@@ -15,6 +19,21 @@ header a {
   @apply absolute top-1/2 -translate-y-1/2 left-4;
 }
 
-header svg {
-  @apply w-full h-auto;
+.wrapper {
+  min-height: calc(100vh - var(--header-height));
+}
+
+#link1 {
+  top: 30%;
+  left: 26%;
+}
+
+#link2 {
+  top: 56%;
+  right: 20%;
+}
+
+#link3 {
+  bottom: 18%;
+  left: 26%;
 }

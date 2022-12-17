@@ -6,7 +6,7 @@ export default function Header({ page }: { page: String }) {
     <header>
       <Link href="/">
         <span>
-          <Small />
+          <Small width="30" height="31" className="h-auto" />
         </span>
       </Link>
       <h1>{page}</h1>

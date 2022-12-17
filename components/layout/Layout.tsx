@@ -8,7 +8,7 @@ export default function Layout({ children, page }: { children: React.ReactNode, 
       <Head>
         <title>{page + ' - Alexmo'}</title>
       </Head>
-      <Header page={page} />
+      {page !== 'Home' && <Header page={page} />}
       <main>
         {children}
       </main>
