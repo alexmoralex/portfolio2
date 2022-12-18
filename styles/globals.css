@@ -7,12 +7,16 @@
   --header-height: 60px;
 }
 
+.pb-full {
+  padding-bottom: 100%;
+}
+
 body {
   @apply bg-black-coffee text-white;
 }
 
 header {
-  @apply uppercase text-center bg-pine-tree text-3xl font-bold py-3 sticky top-0;
+  @apply uppercase text-center bg-pine-tree text-3xl font-bold py-3 sticky top-0 z-10 mb-10;
 }
 
 header a { 
