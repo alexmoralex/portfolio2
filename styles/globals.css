@@ -7,10 +7,6 @@
   --header-height: 60px;
 }
 
-.pb-full {
-  padding-bottom: 100%;
-}
-
 body {
   @apply bg-black-coffee text-white;
 }
@@ -25,6 +21,14 @@ header a {
 
 .wrapper {
   min-height: calc(100vh - var(--header-height));
+}
+
+.pb-full {
+  padding-bottom: 100%;
+}
+
+.btn {
+  @apply bg-white uppercase p-2 text-black-coffee font-semibold;
 }
 
 #link1 {
