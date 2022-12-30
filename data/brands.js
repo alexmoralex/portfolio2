@@ -1,18 +1,18 @@
-import PillowpakLogo from '../public/img/brands/pillowpak.png';
-import CareLogo from '../public/img/brands/900care.png';
-import SpringLogo from '../public/img/brands/spring.png';
-import BanglezLogo from '../public/img/brands/banglez.png';
-import SpaceGeneralLogo from '../public/img/brands/spacegeneral.png';
-import BearabyLogo from '../public/img/brands/bearaby.png';
-import LuxomeLogo from '../public/img/brands/luxome.png';
-import ByRubyLogo from '../public/img/brands/byruby.png';
-import AlternativeMobileLogo from '../public/img/brands/alternativemobile.png';
-import FolklordLogo from '../public/img/brands/folklord.png';
-import RakeLogo from '../public/img/brands/therake.png';
-import DPlusLogo from '../public/img/brands/dplus.png';
-import TheodoraLogo from '../public/img/brands/theodora.png';
-import WorldNicheLogo from '../public/img/brands/worldofniche.png';
-import CollabForLoveLogo from '../public/img/brands/collabforlove.png';
+import PillowpakLogo from 'public/img/brands/pillowpak.png';
+import CareLogo from 'public/img/brands/900care.png';
+import SpringLogo from 'public/img/brands/spring.png';
+import BanglezLogo from 'public/img/brands/banglez.png';
+import SpaceGeneralLogo from 'public/img/brands/spacegeneral.png';
+import BearabyLogo from 'public/img/brands/bearaby.png';
+import LuxomeLogo from 'public/img/brands/luxome.png';
+import ByRubyLogo from 'public/img/brands/byruby.png';
+import AlternativeMobileLogo from 'public/img/brands/alternativemobile.png';
+import FolklordLogo from 'public/img/brands/folklord.png';
+import RakeLogo from 'public/img/brands/therake.png';
+import DPlusLogo from 'public/img/brands/dplus.png';
+import TheodoraLogo from 'public/img/brands/theodora.png';
+import ClothingLogo from 'public/img/brands/onoroff.png';
+import CollabForLoveLogo from 'public/img/brands/collabforlove.png';
 
 const brands = [
   {
@@ -94,9 +94,9 @@ const brands = [
     url: '',
   },
   {
-    name: 'World of Niche',
-    background: '#000000',
-    logo: WorldNicheLogo.src,
+    name: 'On or Off Clothing',
+    background: '#FFFFFF',
+    logo: ClothingLogo.src,
     url: '',
   },
   {

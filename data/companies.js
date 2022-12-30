@@ -1,9 +1,9 @@
-import KmmrceLogo from '../public/img/companies/kmmrce.png';
-import GradiwebLogo from '../public/img/companies/gradiweb.png';
-import BogotaDevLogo from '../public/img/companies/bogotadev.png';
-import BogotaBootcampLogo from '../public/img/companies/bogotabootcamp.png';
-import ToptalLogo from '../public/img/companies/toptal.png';
-import UpworkLogo from '../public/img/companies/upwork.png';
+import KmmrceLogo from 'public/img/companies/kmmrce.png';
+import GradiwebLogo from 'public/img/companies/gradiweb.png';
+import BogotaDevLogo from 'public/img/companies/bogotadev.png';
+import BogotaBootcampLogo from 'public/img/companies/bogotabootcamp.png';
+import ToptalLogo from 'public/img/companies/toptal.png';
+import UpworkLogo from 'public/img/companies/upwork.png';
 
 const companies = [
   {

@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Layout from '../components/layout/Layout';
-import Big from '../public/svg/big.svg';
+import Layout from 'components/layout/Layout';
+import Big from 'public/svg/big.svg';
 
 export default function Home() {
   return (

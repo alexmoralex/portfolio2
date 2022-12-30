@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Small from "../../public/svg/small.svg";
+import Small from "public/svg/small.svg";
 
 export default function Header({ page }: { page: String }) {
   return (
