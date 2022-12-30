@@ -28,7 +28,8 @@ header a {
 }
 
 .btn {
-  @apply bg-white uppercase p-2 text-black-coffee font-semibold;
+  @apply bg-white uppercase p-2 text-black-coffee font-semibold rounded-lg text-center;
+  width: 350px;
 }
 
 #link1 {

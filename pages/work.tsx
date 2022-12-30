@@ -1,8 +1,8 @@
 import Layout from 'components/layout/Layout';
 import Grid from 'components/grid/Grid';
 
-import brands from '../data/brands';
-import companies from '../data/companies';
+import brands from 'data/brands';
+import companies from 'data/companies';
 
 export default function Work() {
 

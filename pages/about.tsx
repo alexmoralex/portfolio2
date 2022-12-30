@@ -12,7 +12,7 @@ export default function About() {
         <div className="p-8 text-2xl">
           <p className="mb-10">I’m Alejandro Morales, a Venezuelan electronics engineer turned into a programmer based in Dubai.</p>
 
-          <div className="bg-pine-tree mx-auto w-48 mb-10">
+          <div className="bg-pine-tree mx-auto w-48 mb-10 rounded-lg">
             <div className="relative pb-full w-full">
               <Image src={AlejandroPic.src} alt="Alejandro Morales" loading="lazy" fill={true} />
             </div>
