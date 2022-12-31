@@ -9,19 +9,19 @@ export default function Technologies() {
 
   return (
     <>
+      <div className="flex justify-center mb-8">
+        <ShopifyIcon className="h-auto max-w-full w-60" />
+      </div>
+      <div className="flex justify-between items-center mb-8">
+        <NextIcon className="h-auto max-w-full w-40" />
+        <ReactIcon className="h-auto max-w-full w-48" />
+      </div>
+      <div className="flex justify-between items-center mb-12">
+        <NodeIcon className="h-auto max-w-full w-52" />
+        <RailsIcon className="h-auto max-w-full w-44" />
+      </div>
       <div className="flex justify-center">
-        <ShopifyIcon className="h-auto max-w-full w-64" />
-      </div>
-      <div className="flex justify-between items-center">
-        <NextIcon className="h-auto max-w-full w-52" />
-        <ReactIcon className="h-auto max-w-full w-64" />
-      </div>
-      <div className="flex justify-between items-center">
-        <NodeIcon className="h-auto max-w-full w-64" />
-        <RailsIcon className="h-auto max-w-full w-64" />
-      </div>
-      <div className="flex justify-center">
-        <FigmaIcon className="h-auto max-w-full w-64" />
+        <FigmaIcon className="h-auto max-w-full w-48" />
       </div>
     </>
   )

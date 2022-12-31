@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function Grid({ title, list }: { title: String, list: any[] }) {
 
   return (
-    <div className="uppercase w-full max-w-4xl mx-auto px-4 mb-10">
-      <div className="bg-pine-tree p-8 rounded-lg">
+    <div className="uppercase w-full max-w-2xl mx-auto px-4 mb-10">
+      <div className="bg-pine-tree p-4 sm:p-8 rounded-lg">
         <h2 className="mb-5 text-center">{title}</h2>
 
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-5">
           {list.map(element => 
           <div key={element.name}>
             <div className="relative w-full pb-full rounded-lg" style={{backgroundColor: element.background}}>
