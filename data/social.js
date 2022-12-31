@@ -7,27 +7,27 @@ import LinkedinIcon from 'public/svg/linkedin.svg';
 const social = [
   {
     name: 'Linkedin',
-    icon: LinkedinIcon,
+    icon: <LinkedinIcon />,
     url: 'https://www.linkedin.com/in/alejandromorales95/',
   },
   {
     name: 'Github',
-    icon: GithubIcon,
+    icon: <GithubIcon />,
     url: 'https://github.com/alexmoralex/',
   },
   {
     name: 'Email',
-    icon: EmailIcon,
+    icon: <EmailIcon />,
     url: 'mailto:alejandromo1995@gmail.com',
   },
   {
     name: 'Codepen',
-    icon: CodepenIcon,
+    icon: <CodepenIcon />,
     url: 'https://codepen.io/alexmoralex/',
   },
   {
     name: 'Instagram',
-    icon: InstagramIcon,
+    icon: <InstagramIcon />,
     url: 'https://www.instagram.com/alexmo95/',
   },
 ]

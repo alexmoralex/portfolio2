@@ -46,3 +46,7 @@ header a {
   bottom: 18%;
   left: 26%;
 }
+
+.field {
+  @apply font-medium rounded-lg border-pine-tree border-2 text-pine-tree p-2 placeholder:text-black-coffee w-full;
+}
