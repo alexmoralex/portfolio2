@@ -4,7 +4,8 @@ import Link from 'next/link';
 
 import AlejandroPic from 'public/img/alejandro.png';
 
-export default function About() {
+export default function About({ locale }: { locale: string }) {
+
   return (
     <section className="w-full max-w-4xl mx-auto px-4">
       <div className="pl-4 pr-4 sm:pl-8 sm:pr-8 text-2xl text-center sm:text-left">

@@ -6,7 +6,7 @@ type Props = {}
 class Document extends NextDocument<Props> {
   render() {
     return (
-      <Html lang="en">
+      <Html>
         <Head />
         <body style={{backgroundColor: '#3B302B', color: '#fff'}}>
           <Main />

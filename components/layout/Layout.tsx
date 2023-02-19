@@ -26,7 +26,7 @@ const pages: { [key: string]: string } = {
   '/contact': 'Contact',
 };
 
-export default function Layout({ children, path }: { children: React.ReactNode, path: string }) {
+export default function Layout({ children, path, locale }: { children: React.ReactNode, path: string, locale: string }) {
   const page = pages[path];
 
   return (

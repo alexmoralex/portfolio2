@@ -15,8 +15,8 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <Layout path={router.asPath}>
-        <Component {...pageProps} />
+      <Layout path={router.asPath} locale={router.locale}>
+        <Component {...pageProps} locale={router.locale} />
       </Layout>
     </>
   )

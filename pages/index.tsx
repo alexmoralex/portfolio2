@@ -1,6 +1,7 @@
 import Menu from 'components/menu/Menu';
 
-export default function Home() {
+export default function Home({ locale }: { locale: string }) {
+  
   return (
     <div className="homepage">
       <div className="w-full md:w-1/2 text-black-coffee">
