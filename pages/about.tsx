@@ -1,4 +1,3 @@
-import Layout from 'components/layout/Layout';
 import Technologies from 'components/technologies/Technologies';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,43 +6,41 @@ import AlejandroPic from 'public/img/alejandro.png';
 
 export default function About() {
   return (
-    <Layout key="about" page="About">
-      <section className="w-full max-w-4xl mx-auto px-4">
-        <div className="pl-4 pr-4 sm:pl-8 sm:pr-8 text-2xl text-center sm:text-left">
-          <p className="mb-10">I’m Alejandro Morales, a Venezuelan electronics engineer turned into a programmer based in Dubai.</p>
+    <section className="w-full max-w-4xl mx-auto px-4">
+      <div className="pl-4 pr-4 sm:pl-8 sm:pr-8 text-2xl text-center sm:text-left">
+        <p className="mb-10">I’m Alejandro Morales, a Venezuelan electronics engineer turned into a programmer based in Dubai.</p>
 
-          <div className="bg-pine-tree mx-auto w-48 mb-10 rounded-lg">
-            <div className="relative pb-full w-full">
-              <Image src={AlejandroPic.src} alt="Alejandro Morales" loading="lazy" fill={true} />
-            </div>
+        <div className="bg-pine-tree mx-auto w-48 mb-10 rounded-lg">
+          <div className="relative pb-full w-full">
+            <Image src={AlejandroPic.src} alt="Alejandro Morales" loading="lazy" fill={true} />
           </div>
-
-          <p className="mb-10">I have 4+ years experience working in web development, using these technologies:</p>
-
-          <div className="mb-10">
-            <Technologies />
-          </div>
-
-          <p className="mb-10">I’ve been able to work in projects as a freelancer, with agencies, with bootcamps, and  part of the team of a brand.</p>
-
-          <p className="mb-10">Always ready for the next challenging project to come.</p>
-
-          <div className="flex flex-col justify-between items-center text-lg mb-10 gap-5 sm:flex-row">
-            <Link href="/contact" className="btn">
-              Contact me
-            </Link>
-
-            <Link href="/work" className="btn">
-              Check my work
-            </Link>
-          </div>
-
-          <p>
-            This is the lastest design of my website,<br/> 
-            <Link href="https://portfoliov1.itsalexmo.com/" target="_blank" className="underline">See previous design</Link>.
-          </p>
         </div>
-      </section>
-    </Layout>
+
+        <p className="mb-10">I have 4+ years experience working in web development, using these technologies:</p>
+
+        <div className="mb-10">
+          <Technologies />
+        </div>
+
+        <p className="mb-10">I’ve been able to work in projects as a freelancer, with agencies, with bootcamps, and  part of the team of a brand.</p>
+
+        <p className="mb-10">Always ready for the next challenging project to come.</p>
+
+        <div className="flex flex-col justify-between items-center text-lg mb-10 gap-5 sm:flex-row">
+          <Link href="/contact" className="btn">
+            Contact me
+          </Link>
+
+          <Link href="/work" className="btn">
+            Check my work
+          </Link>
+        </div>
+
+        <p>
+          This is the lastest design of my website,<br/> 
+          <Link href="https://portfoliov1.itsalexmo.com/" target="_blank" className="underline">See previous design</Link>.
+        </p>
+      </div>
+    </section>
   )
 }

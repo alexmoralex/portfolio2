@@ -1,8 +1,9 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import Layout from 'components/layout/Layout'
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
 
   return (
     <>
@@ -14,7 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <Component {...pageProps} />
+      <Layout path={router.asPath}>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
 }

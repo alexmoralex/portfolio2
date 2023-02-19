@@ -20,9 +20,17 @@ const toasterOptions = {
   duration: 4000
 }
 
-export default function Layout({ children, page }: { children: React.ReactNode, page: String }) {
+const pages = {
+  '/': 'Home',
+  '/about': 'About',
+  '/work': 'Work',
+  '/contact': 'Contact',
+}
+
+export default function Layout({ children, path }: { children: React.ReactNode, path: String }) {
   const [loading, setLoading] = useState(true)
   const router = useRouter();
+  const page = pages[path];
 
   useEffect(() => {
     const handleStart = () => {
