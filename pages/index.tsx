@@ -4,7 +4,7 @@ import Menu from 'components/menu/Menu';
 export default function Home() {
   return (
     <Layout page="Home">
-      <div className="flex flex-col-reverse md:flex-row uppercase font-bold items-center justify-center min-h-screen max-w-6xl mx-auto p-8">
+      <div className="homepage">
         <div className="w-full md:w-1/2 text-black-coffee">
           <Menu />
         </div>
