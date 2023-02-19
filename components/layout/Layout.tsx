@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Toaster } from "react-hot-toast";
 import Header from "./Header";
 
@@ -20,52 +19,38 @@ const toasterOptions = {
   duration: 4000
 }
 
-const pages = {
+const pages: { [key: string]: string, } = {
   '/': 'Home',
   '/about': 'About',
   '/work': 'Work',
   '/contact': 'Contact',
-}
+};
 
-export default function Layout({ children, path }: { children: React.ReactNode, path: String }) {
-  const [loading, setLoading] = useState(true)
-  const router = useRouter();
+export default function Layout({ children, path }: { children: React.ReactNode, path: string }) {
   const page = pages[path];
-
-  useEffect(() => {
-    const handleStart = () => {
-      setLoading(true)
-    }
-
-    const handleStop = () => {
-      setLoading(false)
-    }
-
-    router.events.on('routeChangeStart', handleStart)
-    router.events.on('routeChangeComplete', handleStop)
-    router.events.on('routeChangeError', handleStop)
-
-    return () => {
-      router.events.off('routeChangeStart', handleStart)
-      router.events.off('routeChangeComplete', handleStop)
-      router.events.off('routeChangeError', handleStop)
-    }
-  }, [router])
-
-  useEffect(() => {
-    setLoading(false)
-  }, [])
 
   return (
     <>
       <Head>
         <title>{page + ' - Alexmo'}</title>
       </Head>
-      <Header page={page} />
+      <AnimatePresence>
+        {page !== 'Home' && <Header page={page} />}
+      </AnimatePresence>
       <Toaster containerClassName="uppercase" reverseOrder position="top-right" toastOptions={toasterOptions} />
-      <motion.div>
-        {children}
-      </motion.div>
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.main 
+          key={path}
+          initial={{ y: -30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 30, opacity: 0 }}
+          transition={{
+            type: "linear",
+          }}
+        >
+          {children}
+        </motion.main>
+      </AnimatePresence>
     </>
   )
 }

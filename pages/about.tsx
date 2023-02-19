@@ -27,11 +27,11 @@ export default function About() {
         <p className="mb-10">Always ready for the next challenging project to come.</p>
 
         <div className="flex flex-col justify-between items-center text-lg mb-10 gap-5 sm:flex-row">
-          <Link href="/contact" className="btn">
+          <Link href="/contact" scroll={false} className="btn">
             Contact me
           </Link>
 
-          <Link href="/work" className="btn">
+          <Link href="/work" scroll={false} className="btn">
             Check my work
           </Link>
         </div>
