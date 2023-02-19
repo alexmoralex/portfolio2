@@ -3,7 +3,7 @@ import Menu from 'components/menu/Menu';
 
 export default function Home() {
   return (
-    <Layout page="Home">
+    <Layout key="home" page="Home">
       <div className="homepage">
         <div className="w-full md:w-1/2 text-black-coffee">
           <Menu />

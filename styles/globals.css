@@ -3,14 +3,6 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
-:root {
-  --header-height: 60px;
-}
-
-body {
-  @apply bg-black-coffee text-white;
-}
-
 header {
   @apply uppercase text-center bg-pine-tree text-3xl font-bold py-3 fixed top-0 z-10 w-full;
 }

@@ -7,7 +7,7 @@ import AlejandroPic from 'public/img/alejandro.png';
 
 export default function About() {
   return (
-    <Layout page="About">
+    <Layout key="about" page="About">
       <section className="w-full max-w-4xl mx-auto px-4">
         <div className="pl-4 pr-4 sm:pl-8 sm:pr-8 text-2xl text-center sm:text-left">
           <p className="mb-10">I’m Alejandro Morales, a Venezuelan electronics engineer turned into a programmer based in Dubai.</p>
