@@ -3,14 +3,11 @@ import Link from "next/link";
 import Small from "public/svg/small.svg";
 
 export default function Header({ page }: { page: String }) {
+
+  if (page === 'Home') return null;
   
   return (
-    <motion.header 
-      initial={{ y: '-100%' }}
-      animate={{ y: '0%' }}
-      exit={{ y: '-100%' }}
-      transition={{ duration: 0.3 }}
-    >
+    <motion.header>
       <Link href="/">
         <span>
           <Small width="30" height="31" className="h-auto" />

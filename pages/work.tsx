@@ -8,8 +8,10 @@ export default function Work() {
 
   return (
     <Layout page="Work">
-      <Grid title="I have worked for these companies" list={companies} />
-      <Grid title="I have worked with these brands" list={brands} />
+      <section className="uppercase">
+        <Grid title="I have worked for these companies" list={companies} />
+        <Grid title="I have worked with these brands" list={brands} />
+      </section>
     </Layout>
   )
 }

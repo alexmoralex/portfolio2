@@ -16,9 +16,9 @@ import CollabForLoveLogo from 'public/img/brands/collabforlove.png';
 
 const brands = [
   {
-    name: 'Pillowpak',
+    name: 'Bearaby',
     background: '#FFFFFF',
-    logo: PillowpakLogo.src,
+    logo: BearabyLogo.src,
     url: '',
   },
   {
@@ -46,9 +46,9 @@ const brands = [
     url: '',
   },
   {
-    name: 'Bearaby',
+    name: 'Pillowpak',
     background: '#FFFFFF',
-    logo: BearabyLogo.src,
+    logo: PillowpakLogo.src,
     url: '',
   },
   {

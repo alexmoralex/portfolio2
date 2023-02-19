@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
@@ -53,13 +53,11 @@ export default function Layout({ children, page }: { children: React.ReactNode, 
       <Head>
         <title>{page + ' - Alexmo'}</title>
       </Head>
-      <AnimatePresence>
-        {page !== 'Home' && <Header page={page} />}
-      </AnimatePresence>
+      <Header page={page} />
       <Toaster containerClassName="uppercase" reverseOrder position="top-right" toastOptions={toasterOptions} />
-      <motion.main animate={{opacity: loading ? 0 : 1}} transition={{duration: 0.3}}>
+      <motion.div>
         {children}
-      </motion.main>
+      </motion.div>
     </>
   )
 }

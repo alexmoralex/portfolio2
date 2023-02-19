@@ -8,8 +8,8 @@ import AlejandroPic from 'public/img/alejandro.png';
 export default function About() {
   return (
     <Layout page="About">
-      <div className="w-full max-w-4xl mx-auto px-4 mb-10">
-        <div className="p-8 text-2xl">
+      <section className="w-full max-w-4xl mx-auto px-4">
+        <div className="pl-4 pr-4 sm:pl-8 sm:pr-8 text-2xl text-center sm:text-left">
           <p className="mb-10">I’m Alejandro Morales, a Venezuelan electronics engineer turned into a programmer based in Dubai.</p>
 
           <div className="bg-pine-tree mx-auto w-48 mb-10 rounded-lg">
@@ -28,7 +28,7 @@ export default function About() {
 
           <p className="mb-10">Always ready for the next challenging project to come.</p>
 
-          <div className="flex justify-between text-lg mb-10">
+          <div className="flex flex-col justify-between items-center text-lg mb-10 gap-5 sm:flex-row">
             <Link href="/contact" className="btn">
               Contact me
             </Link>
@@ -43,7 +43,7 @@ export default function About() {
             <Link href="https://portfoliov1.itsalexmo.com/" target="_blank" className="underline">See previous design</Link>.
           </p>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }

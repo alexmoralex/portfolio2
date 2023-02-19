@@ -12,11 +12,11 @@ export default function Technologies() {
       <div className="flex justify-center mb-8">
         <ShopifyIcon className="h-auto max-w-full w-60" />
       </div>
-      <div className="flex justify-between items-center mb-8">
+      <div className="flex flex-col justify-between items-center mb-8 gap-8 sm:flex-row">
         <NextIcon className="h-auto max-w-full w-40" />
         <ReactIcon className="h-auto max-w-full w-48" />
       </div>
-      <div className="flex justify-between items-center mb-12">
+      <div className="flex flex-col justify-between items-center mb-12 gap-8 sm:flex-row">
         <NodeIcon className="h-auto max-w-full w-52" />
         <RailsIcon className="h-auto max-w-full w-44" />
       </div>
