@@ -11,7 +11,7 @@ export default function Header({ page }: { page: String }) {
       exit={{ y: '-100%' }}
       transition={{ 
         duration: 0.5,
-        ease: "easeOut"
+        ease: 'easeOut'
       }}
     >
       <Link href="/">

@@ -16,7 +16,7 @@ export default function Menu() {
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            type: "linear",
+            type: 'linear',
             duration: 1,
           }}
         >
@@ -26,7 +26,7 @@ export default function Menu() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
-            type: "linear",
+            type: 'linear',
             delay: .4,
             duration: 1,
           }}
@@ -38,7 +38,7 @@ export default function Menu() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
-            type: "linear",
+            type: 'linear',
             delay: .8,
             duration: 1,
           }}
@@ -53,7 +53,7 @@ export default function Menu() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          ease: "easeInOut",
+          ease: 'easeInOut',
           delay: 1,
           duration: .7,
         }}

@@ -19,7 +19,7 @@ const toasterOptions = {
   duration: 4000
 }
 
-const pages: { [key: string]: string, } = {
+const pages: { [key: string]: string } = {
   '/': 'Home',
   '/about': 'About',
   '/work': 'Work',
@@ -38,15 +38,13 @@ export default function Layout({ children, path }: { children: React.ReactNode, 
         {page !== 'Home' && <Header page={page} />}
       </AnimatePresence>
       <Toaster containerClassName="uppercase" reverseOrder position="top-right" toastOptions={toasterOptions} />
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence mode="wait">
         <motion.main 
           key={path}
           initial={{ y: -30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 30, opacity: 0 }}
-          transition={{
-            type: "linear",
-          }}
+          transition={{ type: 'linear' }}
         >
           {children}
         </motion.main>
