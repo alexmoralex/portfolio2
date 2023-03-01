@@ -1,4 +1,8 @@
-const content = {
+type Content = {
+  [key: string]: any
+}
+
+const content: Content = {
   en: {
     pages: {
       '/': 'Home',
