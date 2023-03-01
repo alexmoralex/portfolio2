@@ -21,10 +21,10 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <meta name="theme-color" content="#3B302B" />
 
         <link rel="canonical" href={domain + asPath} />
-        <link rel="alternate" href={domain + path} hreflang="x-default" />
-        <link rel="alternate" href={domain + path} hreflang="en" />
-        <link rel="alternate" href={domain + '/fr' + path} hreflang="fr" />
-        <link rel="alternate" href={domain + '/es' + path} hreflang="es" />
+        <link rel="alternate" href={domain + path} hrefLang="x-default" />
+        <link rel="alternate" href={domain + path} hrefLang="en" />
+        <link rel="alternate" href={domain + '/fr' + path} hrefLang="fr" />
+        <link rel="alternate" href={domain + '/es' + path} hrefLang="es" />
 
         <meta property="og:site_name" content="Alexmo" />
         <meta property="og:url" content={domain + asPath} />
