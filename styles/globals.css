@@ -49,7 +49,7 @@ section {
 }
 
 .link {
-  @apply absolute -translate-x-1/2 -translate-y-1/2 transform block rounded-full;
+  @apply absolute -translate-x-1/2 -translate-y-1/2 transform block rounded-full text-center;
 }
 
 .link span {

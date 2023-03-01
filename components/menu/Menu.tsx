@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-export default function Menu() {
+export default function Menu({ link1 = '', link2 = '', link3 = '' }) {
   return (
     <div className="menu">
       <svg 
@@ -59,13 +59,13 @@ export default function Menu() {
         }}
       >
         <Link id="link1" href="/work" className="link">
-          <span>Work</span>
+          <span>{link1}</span>
         </Link>
         <Link id="link2" href="/about" className="link">
-          <span>About</span>
+          <span>{link2}</span>
         </Link>
         <Link id="link3" href="/contact" className="link">
-          <span>Contact</span>
+          <span>{link3}</span>
         </Link>
       </motion.div>
     </div>
