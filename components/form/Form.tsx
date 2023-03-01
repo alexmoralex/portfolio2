@@ -17,6 +17,7 @@ type Content = {
   sendButon: string,
   required: string,
   invalid: string,
+  sent: string,
 }
 
 export default function Form({ content }: { content: Content }) {
