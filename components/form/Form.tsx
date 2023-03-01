@@ -9,7 +9,7 @@ type Inputs = {
   message: string,
 };
 
-export default function Form({ content }) {
+export default function Form({ content: {} }) {
   const { register, handleSubmit } = useForm<Inputs>();
 
   const emailPattern = {
