@@ -3,6 +3,7 @@ import Head from "next/head";
 import React from "react";
 import { Toaster } from "react-hot-toast";
 import Header from "./Header";
+import content from 'data/content'
 
 const toasterOptions = {
   style: {
@@ -19,15 +20,9 @@ const toasterOptions = {
   duration: 4000
 }
 
-const pages: { [key: string]: string } = {
-  '/': 'Home',
-  '/about': 'About',
-  '/work': 'Work',
-  '/contact': 'Contact',
-};
-
 export default function Layout({ children, path, locale }: { children: React.ReactNode, path: string, locale: string }) {
-  const page = pages[path];
+  const localeContent = content[locale]
+  const page = content.pages[path];
 
   return (
     <>
