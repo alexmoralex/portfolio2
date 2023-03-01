@@ -14,7 +14,7 @@ type Content = {
   name: string,
   subject: string,
   message: string,
-  sendButon: string,
+  sendButton: string,
   required: string,
   invalid: string,
   sent: string,
