@@ -3,7 +3,11 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Layout from 'components/layout/Layout'
 
+const domain = 'https://itsalexmo.com';
+
 export default function App({ Component, pageProps, router }: AppProps) {
+  const { locale = 'en', asPath = '/' } = router || {};
+  const path = locale !== 'en' ? asPath.slice(3) : asPath
 
   return (
     <>
@@ -14,9 +18,26 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#3B302B" />
+
+        <link rel="canonical" href={domain + asPath} />
+        <link rel="alternate" href={domain + path} hrefLang="x-default" />
+        <link rel="alternate" href={domain + path} hrefLang="en" />
+        <link rel="alternate" href={domain + '/fr' + path} hrefLang="fr" />
+        <link rel="alternate" href={domain + '/es' + path} hrefLang="es" />
+
+        <meta property="og:site_name" content="Alexmo" />
+        <meta property="og:url" content={domain + asPath} />
+        <meta property="og:title" content="Alexmo Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Alejandro Morales, Fullstack Developer / Shopify Expert" />
+        <meta property="og:image" content="/img/alexmo.jpg" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="800" />
+        <meta property="og:locale" content={locale} />
       </Head>
-      <Layout path={router.asPath} locale={router.locale}>
-        <Component {...pageProps} locale={router.locale} />
+      <Layout path={asPath} locale={locale}>
+        <Component {...pageProps} locale={locale} />
       </Layout>
     </>
   )
