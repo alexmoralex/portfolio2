@@ -30,7 +30,7 @@ export default function Layout({ children, path, locale }: { children: React.Rea
         <title>{page + ' - Alexmo'}</title>
       </Head>
       <AnimatePresence>
-        {page !== 'Home' && <Header page={page} />}
+        {path !== '/' && <Header page={page} />}
       </AnimatePresence>
       <Toaster containerClassName="uppercase" reverseOrder position="top-right" toastOptions={toasterOptions} />
       <AnimatePresence mode="wait">
