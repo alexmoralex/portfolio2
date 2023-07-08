@@ -21,7 +21,7 @@ const toasterOptions = {
 }
 
 export default function Layout({ children, path, locale }: { children: React.ReactNode, path: string, locale: string }) {
-  const localeContent = content[locale]
+  const localeContent = content[locale] || content.en
   const page = localeContent.pages[path];
 
   return (
@@ -30,7 +30,7 @@ export default function Layout({ children, path, locale }: { children: React.Rea
         <title>{page + ' - Alexmo'}</title>
       </Head>
       <AnimatePresence>
-        {path !== '/' && <Header page={page} />}
+        {(!!path && path !== '/') && <Header page={page} />}
       </AnimatePresence>
       <Toaster containerClassName="uppercase" reverseOrder position="top-right" toastOptions={toasterOptions} />
       <AnimatePresence mode="wait">
