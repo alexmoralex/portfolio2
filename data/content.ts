@@ -19,7 +19,7 @@ const content: Content = {
       brandsTitle: 'I have worked with these brands',
     },
     about: {
-      paragraph1: 'I’m Alejandro Morales, a Venezuelan electronics engineer turned into a programmer based in Dubai.',
+      paragraph1: 'I’m Alejandro Morales, a Venezuelan electronics engineer turned into a programmer based in Paris.',
       paragraph2: 'I have 4+ years experience working in web development, using these technologies:',
       paragraph3: 'I’ve been able to work in projects as a freelancer, with agencies, with bootcamps, and  part of the team of a brand.',
       paragraph4: 'Always ready for the next challenging project to come.',
@@ -55,7 +55,7 @@ const content: Content = {
       brandsTitle: 'He trabajado con estas marcas',
     },
     about: {
-      paragraph1: 'Soy Alejandro Morales, un ingeniero electronico venezolano vuelto un programador viviendo en Dubai.',
+      paragraph1: 'Soy Alejandro Morales, un ingeniero electronico venezolano vuelto un programador viviendo en Paris.',
       paragraph2: 'Tengo mas de 4 años de experiencia en desarrollo web, utilizando estas tecnologias:',
       paragraph3: 'He trabajado en proyectos como freelancer, con agencias, con bootcamps y parte de un equipo de una marca.',
       paragraph4: 'Siempre listo para el siguiente proyecto desafiante.',
@@ -91,7 +91,7 @@ const content: Content = {
       brandsTitle: 'J’ai travaillé avec ces marques',
     },
     about: {
-      paragraph1: 'Je suis Alejandro Morales, un ingénieur électronicien vénézuélien devenu programmeur basé à Dubaï.',
+      paragraph1: 'Je suis Alejandro Morales, un ingénieur électronicien vénézuélien devenu programmeur basé à Paris.',
       paragraph2: 'J’ai plus de 4 ans d’expérience dans le développement Web, en utilisant ces technologies:',
       paragraph3: 'J’ai pu travailler sur des projets en tant que freelance, avec des agences, avec des bootcamps, et faire partie de l’équipe d’une marque.',
       paragraph4: 'Toujours prêt pour le prochain projet stimulant à venir.',

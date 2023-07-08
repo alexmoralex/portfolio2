@@ -29,5 +29,5 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       else console.log(info)
   })
 
-  res.status(200).json({ name: 'John Doe' })
+  res.status(200).json({ status: 'sent' })
 }
