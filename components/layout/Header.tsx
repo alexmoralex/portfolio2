@@ -3,6 +3,7 @@ import Link from "next/link";
 import Small from "public/svg/small.svg";
 
 export default function Header({ page }: { page: String }) {
+  if (!page) return null;
   
   return (
     <motion.header

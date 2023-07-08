@@ -22,7 +22,7 @@ const toasterOptions = {
 
 export default function Layout({ children, path, locale }: { children: React.ReactNode, path: string, locale: string }) {
   const localeContent = content[locale] || content.en
-  const page = localeContent.pages[path];
+  const page = localeContent.pages[path] || 'Home';
 
   return (
     <>
