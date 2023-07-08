@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Small from "public/svg/small.svg";
 
-export default function Header({ page }: { page: String }) {
-  if (!page) return null;
+const homeTitles = ['Home', 'Inicio', 'Accueil']
+
+export default function Header({ page }: { page: string }) {
+  if (!page || homeTitles.includes(page)) return null;
   
   return (
     <motion.header
