@@ -23,11 +23,14 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     text: `${name} ${email} - ${subject} - ${message}`,
     html: `<p>${name} <a href="mailto:${email}">${email}</a></p><p><b>${subject}</b></p><p>${message}</p>`,
   }
+  
+  let responseData;
 
   transporter.sendMail(options, (error, info) =>{
       if(error) console.log(error)
       else console.log(info)
+      responseData = info || 'error'
   })
 
-  res.status(200).json({ status: 'sent' })
+  res.status(200).json({ info: responseData })
 }

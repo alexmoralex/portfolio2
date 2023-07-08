@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { notify, onFormErrors } from "utils/notifications";
 
@@ -22,6 +23,7 @@ type Content = {
 
 export default function Form({ content }: { content: Content }) {
   const { register, handleSubmit } = useForm<Inputs>();
+  const [loading, setloading] = useState(false)
 
   const emailPattern = {
     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -29,12 +31,14 @@ export default function Form({ content }: { content: Content }) {
   }
   
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    const response = await axios({
+    setloading(true)
+    await axios({
       url: '/api/contact',
       method: 'POST',
       data,
     })
   
+    setloading(false)
     notify(content.sent, 'SUCCESS')
   }
   
@@ -48,7 +52,7 @@ export default function Form({ content }: { content: Content }) {
         <input className="field" type="text" placeholder={content.subject} {...register("subject", { required: `${content.subject}: ${content.required}` })} />
         <textarea className="field resize-none h-28" placeholder={content.message} {...register("message", { required: `${content.message}: ${content.required}` })} />
         <div className="ml-auto w-full md:w-1/2 md:pl-6">
-          <button type="submit" className="bg-pine-tree text-white p-2 rounded-lg w-full">{content.sendButton}</button>
+          <button type="submit" className="bg-pine-tree text-white p-2 rounded-lg w-full" disabled={loading}>{content.sendButton}</button>
         </div>
       </div>
     </form>
