@@ -33,13 +33,16 @@ export default async function handler(
     html: `<p>${name} <a href="mailto:${email}">${email}</a></p><p><b>${subject}</b></p><p>${message}</p>`,
   };
 
-  let responseData;
-
-  await transporter.sendMail(options, (error, info) => {
-    if (error) console.log(error);
-    else console.log(info);
-    responseData = info || "error";
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(options, (err, response) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(response);
+      }
+    });
   });
 
-  res.status(200).json({ info: responseData });
+  res.status(200).json({ info: "sent" });
 }
